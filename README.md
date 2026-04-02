@@ -4,7 +4,7 @@ A modern and responsive personal portfolio website built using **HTML, CSS, and 
 This project showcases my skills, projects, and experience as a developer, with a strong focus 
 on clean design and smooth user interaction.
 
----
+
 
 ##  Features
 
@@ -17,7 +17,7 @@ on clean design and smooth user interaction.
 -  Fully responsive across devices  
 -  Custom cursor and hover effects  
 
----
+
 
 ## Tech Stack
 
@@ -25,19 +25,18 @@ on clean design and smooth user interaction.
 - **CSS3** – Styling, animations, and responsiveness  
 - **JavaScript (ES6)** – Interactivity and dynamic behavior  
 
----
 
 ##  Project Structure
-`portfolio/
+```portfolio/
 │── index.html
 │── style.css
 │── script.js
 │── assets/
 │ ├── images/
-│ ├── icons/`
+│ ├── icons/
 
 
----
+
 
 ## ⚙️ Getting Started
 
