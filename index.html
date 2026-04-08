@@ -1,17 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortFolio</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:,">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My KLAB Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    
+  <header class="navbar">
+    <div class="wrap nav-row">
+      <a href="#home" class="brand">Peter<span></span></a>
+      <button class="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav-links">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="sun-btn" aria-label="Theme toggle"><i class="fa-regular fa-sun"></i></button>
+    </div>
+  </header>
+
+  <main class="page" id="home">
+    <section class="hero section reveal">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h2>Call me</h2>
+          <h1>Hitayezu Jean Pierre</h1>
+          <h3>Software-Frontend Developer</h3>
+          <p class="stack">Javascript | Typescript | Reactjs | Nodejs | MongoDb</p>
+          <div class="connect">
+            <p>Connect with me</p>
+            <div class="icons">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="hero-circle"></div>
+          <img class="hero-photo" src="./assets/figma/hero-profile.png" alt="Hero profile image">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="wrap about-grid">
+        <img class="about-photo" src="./assets/figma/about-photo.png" alt="About image">
+        <div class="about-copy">
+          <h2>Personal Information</h2>
+          <p>I'am a software developer.I provide clean code with year of experience and many clients are happy to my projects.I'm interested in frontent and backend . I'm keen to learn new things and progress in my career.</p>
+          <a href="#" class="btn-magenta">Dowload CV <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap">
+        <h2 class="center title-80">My Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Technical skills</h3>
+            <div class="bars">
+              <div><span>Html</span><div><i style="width:85%"></i></div><em>85%</em></div>
+              <div><span>Javascript</span><div><i style="width:90%"></i></div><em>90%</em></div>
+              <div><span>Css</span><div><i style="width:70%"></i></div><em>70%</em></div>
+              <div><span>React</span><div><i style="width:70%"></i></div><em>70%</em></div>
+            </div>
+          </div>
+          <div>
+            <h3>Professional Skills</h3>
+            <div class="pro-grid">
+              <div class="skill-ring" style="--p:85"><strong>85%</strong><span>Communication</span></div>
+              <div class="skill-ring" style="--p:90"><strong>90%</strong><span>Creativity</span></div>
+              <div class="skill-ring" style="--p:70"><strong>70%</strong><span>Collaboration</span></div>
+              <div class="skill-ring" style="--p:70"><strong>70%</strong><span>Problem solving</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal section-alt">
+      <div class="wrap">
+        <h2 class="center">My Recently Works</h2>
+        <div class="tabs" data-filter-group="projects">
+          <a class="active" data-filter="all">All</a><a data-filter="frontend">Frontend</a><a data-filter="backend">Backend</a><a data-filter="mobile">Mobile</a>
+        </div>
+        <div class="cards3" id="project-list">
+          <article data-category="frontend"><img src="./assets/figma/project-1.png" alt=""><h4>E-commerce website</h4><div><a>Github</a><a>Live</a></div></article>
+          <article data-category="frontend backend"><img src="./assets/figma/project-2.png" alt=""><h4>Portfolio Nextjs</h4><div><a>Github</a><a>Live</a></div></article>
+          <article data-category="mobile"><img src="./assets/figma/project-3.png" alt=""><h4>Movie App reactNative</h4><div><a>Github</a><a>Live</a></div></article>
+        </div>
+        <div class="center-btn"><a class="btn-magenta">Show More</a></div>
+      </div>
+    </section>
+
+    <section id="blogs" class="section reveal section-alt">
+      <div class="wrap">
+        <h2 class="center">Trending Blogs</h2>
+        <div class="tabs" data-filter-group="blogs">
+          <a class="active" data-filter="all">All</a><a data-filter="programming">Programmig</a><a data-filter="music">Music</a><a data-filter="achievement">Achievement</a>
+        </div>
+        <div class="cards3 blog" id="blog-list">
+          <article data-category="programming"><img src="./assets/figma/blog-1.png" alt=""><h4>My programming jounery</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn">ReadMore</a></article>
+          <article data-category="music"><img src="./assets/figma/blog-2.png" alt=""><h4>My Music jounery</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn">ReadMore</a></article>
+          <article data-category="achievement"><img src="./assets/figma/blog-1.png" alt=""><h4>My academic shifting</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn">ReadMore</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section reveal section-alt">
+      <div class="wrap">
+        <h2 class="center">Experiences & Insights</h2>
+        <div class="quote-controls">
+          <button class="quote-btn" data-dir="prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="quote-btn" data-dir="next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="quotes" id="quotes-track">
+          <blockquote>“We struggled with our website performance until Jean Pierre stepped in. He redesigned everything with a modern approach, and the results exceeded our expectations.”<br><br>— Samuel R<br>Business Owner</blockquote>
+          <blockquote>“Working with Jean Pierre was smooth and efficient. He doesn’t just build — he understands the problem and delivers thoughtful solutions.”<br><br>— Aline M.<br>Startup Founder</blockquote>
+          <blockquote>“Jean Pierre combines technical skill with a strong sense of design. The final product was not only functional but also visually outstanding.”<br><br>— Claudine U<br>UI/UX Designer</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal section-alt">
+      <div class="wrap">
+        <h2 class="center">Contact Me</h2>
+        <form class="contact-form">
+          <input placeholder="Enter your name">
+          <input placeholder="Enter your Email">
+          <textarea placeholder="Write your Message here"></textarea>
+          <button type="button" class="btn-magenta send">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Hitayezu Jean Pierre. Crafted with passion and precision.</footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
