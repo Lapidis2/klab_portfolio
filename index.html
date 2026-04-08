@@ -44,10 +44,11 @@
           </div>
         </div>
         <div class="hero-visual">
-          <div class="orbit orbit-a"></div>
-          <div class="orbit orbit-b"></div>
-          <div class="hero-circle"></div>
-          <img class="hero-photo" src="./assets/figma/hero-profile.png" alt="Hero profile image">
+          <div class="orbit orbit-a" aria-hidden="true"></div>
+          <div class="orbit orbit-b" aria-hidden="true"></div>
+          <div class="hero-photo-shell">
+            <img class="hero-photo" src="./assets/figma/hero-profile.png" alt="Hero profile image" width="412" height="440" decoding="async">
+          </div>
         </div>
       </div>
     </section>
@@ -111,9 +112,9 @@
           <a class="active" data-filter="all">All</a><a data-filter="programming">Programmig</a><a data-filter="music">Music</a><a data-filter="achievement">Achievement</a>
         </div>
         <div class="cards3 blog" id="blog-list">
-          <article data-category="programming"><img src="./assets/figma/blog-1.png" alt=""><h4>My programming jounery</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn">ReadMore</a></article>
-          <article data-category="music"><img src="./assets/figma/blog-2.png" alt=""><h4>My Music jounery</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn">ReadMore</a></article>
-          <article data-category="achievement"><img src="./assets/figma/blog-1.png" alt=""><h4>My academic shifting</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn">ReadMore</a></article>
+          <article data-category="programming"><img src="./assets/figma/blog-1.png" alt=""><h4>My programming jounery</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn" href="./pages/blog.html?slug=programming">ReadMore</a></article>
+          <article data-category="music"><img src="./assets/figma/blog-2.png" alt=""><h4>My Music jounery</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn" href="./pages/blog.html?slug=music">ReadMore</a></article>
+          <article data-category="achievement"><img src="./assets/figma/blog-1.png" alt=""><h4>My academic shifting</h4><p>Sharing lessons learned along my programming journey......</p><a class="small-btn" href="./pages/blog.html?slug=achievement">ReadMore</a></article>
         </div>
       </div>
     </section>
@@ -130,6 +131,7 @@
           <blockquote>“Working with Jean Pierre was smooth and efficient. He doesn’t just build — he understands the problem and delivers thoughtful solutions.”<br><br>— Aline M.<br>Startup Founder</blockquote>
           <blockquote>“Jean Pierre combines technical skill with a strong sense of design. The final product was not only functional but also visually outstanding.”<br><br>— Claudine U<br>UI/UX Designer</blockquote>
         </div>
+        <div class="quote-dots" id="quote-dots" role="tablist" aria-label="Testimonial slides"></div>
       </div>
     </section>
 
