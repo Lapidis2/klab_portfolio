@@ -467,6 +467,8 @@ h2 {
 .cards3 article>div a,
 .small-btn {
 	display: inline-flex;
+	text-decoration: none;
+	color: var(--white);
 	justify-content: center;
 	align-items: center;
 	min-width: 91px;
