@@ -110,6 +110,69 @@ body {
 	cursor: pointer
 }
 
+
+
+
+.name {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* LEFT overlay: highlights letters from start → center */
+.name .overlay.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+   opacity: 0.4; 
+  background-color: #FF007F;
+  animation: leftSlide 5s ease-in-out infinite;
+}
+
+/* RIGHT overlay: covers text beyond center → reveals end letters */
+.name .overlay.right {
+  position: absolute;
+  top: 0;
+  left: 50%; /* start at center */
+  height: 100%;
+   opacity: 0.4; 
+  width: 50%; /* full text beyond center */
+  background-color: #FF007F;
+  animation: rightSlide 5s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes leftSlide {
+  0%, 100% { width: 0; }
+  50% { width: 50%; } /* grows to center */
+}
+
+@keyframes rightSlide {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(50%); } /* reveals end text gradually */
+}
+
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #FF007F; 
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+ 
+   transition: transform 0.08s linear;
+}
+
 .section {
 	min-height: 820px;
 	padding: 56px 0 24px;
